@@ -1,10 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    sans-serif; */
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  /* font-size: 62.5%; */
+  --color-primary: #2364aa;
+  --color-primary-hover: #408ada;
+  --color-primary-light: #3da5d9;
+  --color-primary-light-hover: #69bde7;
+  --color-primary-dark: #1c5592;
+  --color-primary-dark-hover: #2f72b9;
+  --color-secondary: #f49f00;
+  --color-secondary-hover: #ffbd41;
+  --color-secondary-light: #ffd102;
+  --color-secondary-light-hover: #ffe159;
+  --color-secondary-dark: #fd8700;
+  --color-secondary-dark-hover: #fa9d32;
+  --ripple-dark: #0D47A1;
+  --ripple-light: #FFF;
+  --color-background: #fff;
+  --color-background-disabled: rgba(0, 0, 0, 0.26);
+  --color-text-dark: #161616;
+  --color-text-light: #FFFFFF;
+  --color-text-primary: #161616;
+  --color-text-secondary: #FFFFFF;
+  --color-text-primary-on-primary: var(--color-text-light);
+  --color-text-secondary-on-secondary: var(--color-text-dark);
+  --color-label: #161616;
+  --color-label-primary: #161616;
+  --color-label-secondary: #161616;
+  --color-input-label: #BDC3C7;
+  --color-input-label-primary: var(--color-input-label);
+  --color-input-label-secondary: var(--color-input-label);
+  --color-input-text: #161616;
+  --color-input-text-primary: #161616;
+  --color-input-text-secondary: #161616;
+  --color-input-counter: rgba(0, 0, 0, 0.26);
+  --color-input-counter-primary: rgba(0, 0, 0, 0.26);
+  --color-input-counter-secondary: rgba(0, 0, 0, 0.26);
+  --app-bar-background-color: #2196f3;
+  --app-bar-color: #FFF;
+  --app-bar-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  --nav-drawer-background-color: #FFF;
+  --nav-drawer-menu-color: #161616;
+  --nav-drawer-menu-color-active: #FFF;
+  --nav-drawer-menu-background-active: #2196f3;
+  --nav-drawer-menu-divider-background: #161616;
+  --desktop-min-width: 960px;
+  --mobile-max-width: 959px;
 }
 
 code {

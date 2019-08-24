@@ -1,0 +1,31 @@
+nav ul {
+  position: fixed;
+  width: 60%;
+  top: 0;
+  right: 0;
+  text-align: left;
+  background: rgb(36, 41, 44);
+  height: 100%;
+  z-index: 7;
+  padding-top: 3em;
+}
+
+nav li a {
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 1em 2em;
+  background-color: rgb(49, 51, 59);
+}
+
+nav ul li a:hover {
+  background-color: rgb(65, 73, 78);
+}
+
+#mainLogo {
+  width: 4em;
+  display: block;
+  padding: 0;
+  margin: 10px 10px 0 10px;
+}
