@@ -23,9 +23,14 @@ nav ul li a:hover {
   background-color: rgb(65, 73, 78);
 }
 
+.headerContainer {
+  padding-top: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
 #mainLogo {
-  width: 4em;
+  width: 7%;
   display: block;
   padding: 0;
-  margin: 10px 10px 0 10px;
+  margin: 10px 20px 20px;
 }

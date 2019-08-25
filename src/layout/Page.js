@@ -39,7 +39,6 @@ const useStyles = makeStyles(theme => ({
     padding: 0,
     width: '100%', /* Full width (cover the whole page) */
     height: '100%', /* Full height (cover the whole page) */
-    backgroundColor: 'rgba(0,0,0,0.5)', /* Black background with opacity */
   }
 }));
 
@@ -61,7 +60,7 @@ function Page() {
         </Grid>
         {/* component 1 */}
         <Grid item xs={12} sm={6}>
-          <Button>Click me</Button>
+          <Button primary>Click me</Button>
           <Paper className={classes.paper}>xs=12 sm=6</Paper>
         </Grid>
         {/* component 2 */}

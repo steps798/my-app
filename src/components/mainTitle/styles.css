@@ -5,6 +5,17 @@
   padding: 0;
 }
 
+.mainTitle {
+  z-index: 2;
+  text-align: left;
+  max-width: 50%;
+  position: absolute;
+  padding: 20px 0 0 50px;
+  font-size: 3vw;
+  font-weight: bold;
+  color: #FFF;
+}
+
 .carouselItem {
   max-width: 100%;
   height: auto;
