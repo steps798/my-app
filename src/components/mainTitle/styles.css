@@ -11,9 +11,17 @@
   max-width: 50%;
   position: absolute;
   padding: 20px 0 0 50px;
-  font-size: 3vw;
+}
+
+.mainTitle p {
+  font-size: 3.2vw;
   font-weight: bold;
-  color: #FFF;
+  color: #2364aa;
+}
+
+.mainTitle span {
+  font-size: 2vw;
+  color: #2364aa;
 }
 
 .carouselItem {

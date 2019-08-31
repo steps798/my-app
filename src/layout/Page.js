@@ -7,6 +7,7 @@ import Grid from '@material-ui/core/Grid';
 import styles from './styles.css';
 import Header from '../components/header/Header';
 import MainTitle from '../components/mainTitle/MainTitle';
+import Introduction from '../components/introduction/Introduction';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -39,6 +40,10 @@ const useStyles = makeStyles(theme => ({
     padding: 0,
     width: '100%', /* Full width (cover the whole page) */
     height: '100%', /* Full height (cover the whole page) */
+  },
+  component: {
+    margin: '0 45px 0 55px ',
+    padding: 0
   }
 }));
 
@@ -58,9 +63,11 @@ function Page() {
         <Grid item xs={12} style={{margin: 0, padding: 0}}>
           <div className={classes.imageSlider}><MainTitle/></div>
         </Grid>
+        <Grid item xs={12}>
+          <div className={classes.component}><Introduction/></div>
+        </Grid>
         {/* component 1 */}
         <Grid item xs={12} sm={6}>
-          <Button primary>Click me</Button>
           <Paper className={classes.paper}>xs=12 sm=6</Paper>
         </Grid>
         {/* component 2 */}

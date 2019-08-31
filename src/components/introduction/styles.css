@@ -1,0 +1,41 @@
+.componentTitle {
+  margin: 10px 0;
+}
+
+.componentTitle p {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #f49f00;
+  margin: -5px 0 10px;
+}
+
+.componentTitle span {
+  font-size: 0.8em;
+}
+
+.icon {
+  width: 50px;
+  display: block;
+  padding: 0 7px 0 7px;
+  margin: -25px auto auto auto;
+  background-color: white;
+}
+
+.iconContainer {
+  width: 90%;
+  border-top: 1px solid #ffd600;
+  margin: auto;
+}
+
+.description {
+  padding: 5px 0 20px;
+}
+
+.description span {
+  font-size: 0.8em;
+}
+
+.descriptionTitle {
+  font-weight: 700;
+  font-size: 1em;
+}

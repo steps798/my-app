@@ -13,7 +13,8 @@ function MainTitle(){
     <div style={{display: 'flex', alignItems: 'center'}}>
       {/* <img src={bgImage} id="bgImage" alt="bgImage" /> */}
       <div class="mainTitle">
-        <p>Feel His enormous love through trip to Holy Land</p>
+        <p>Feel His Enormous Love through Trip to Holy Land</p>
+        <span>only with Aristi Buana Tour</span>
       </div>
       <Carousel 
         style={{maxWidth: '100%'}} 
