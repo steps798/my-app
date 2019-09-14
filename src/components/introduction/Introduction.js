@@ -11,7 +11,7 @@ function Introduction(){
     <div style={{flexGrow: 1, margin: '30px 0'}}>
       <Grid container spacing={3} style={{textAlign: 'center'}}>
         <Grid item xs={12} className="componentTitle" style={{ marginBottom: '20px'}}>
-          <span style={{fontSize: '0.6em'}}>travel with</span>
+          <span style={{fontSize: '0.8em'}}>travel with</span>
           <p>Aristi Buana Tour</p>
           <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste necessitatibus tempora debitis similique totam rerum labore inventore repellat corrupti. Eius architecto est ab voluptatum, illo eveniet tenetur aliquam repellat voluptate</span>
         </Grid>
