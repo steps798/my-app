@@ -8,6 +8,7 @@ import styles from './styles.css';
 import Header from '../components/header/Header';
 import MainTitle from '../components/mainTitle/MainTitle';
 import Introduction from '../components/introduction/Introduction';
+import Service from '../components/service/Service';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -63,8 +64,21 @@ function Page() {
         <Grid item xs={12} style={{margin: 0, padding: 0}}>
           <div className={classes.imageSlider}><MainTitle/></div>
         </Grid>
+        {/* introduction */}
         <Grid item xs={12}>
           <div className={classes.component}><Introduction/></div>
+        </Grid>
+        {/* service */}
+        <Grid item xs={12}>
+          <div className={classes.component}><Service/></div>
+        </Grid>
+        {/* package */}
+        <Grid item xs={12}>
+          {/* <div className={classes.component}><Service/></div> */}
+        </Grid>
+        {/* footer */}
+        <Grid item xs={12}>
+          {/* <div className={classes.component}><Service/></div> */}
         </Grid>
         {/* component 1 */}
         <Grid item xs={12} sm={6}>

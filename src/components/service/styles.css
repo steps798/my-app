@@ -1,0 +1,81 @@
+.button {
+  background: linear-gradient(to left, #0b486b, #f56217); /*sunset W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  height: calc(80vh - 10px);
+  --url_bgImage1: url("../assets/Dome-of-Church-of-the-Holy-Sepulchre.jpg");
+  --url_bgImage2: url('../assets/old-city-jerusalem.jpg');
+  --url_bgImage3: url('../assets/jerusalem-old-city.jpg');
+  --url_bgImage4: url('../assets/dead-sea-tiberias-sea-of-galilee.jpg');
+  --url_bgImage5: url('../assets/Church_of_the_Holy_Sepulchre.jpg');
+}
+
+@media screen and (max-width: 400px) {
+  .parent {
+    height: calc(50vh - 10px);
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  .parent {
+    height: calc(60vh - 10px);
+  }
+}
+
+/* .parent img {
+  object-fit: cover;
+  max-height: 100%;
+  width: 100%;
+} */
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  background-image: var(--url_bgImage3);
+  background-size: cover;
+  background-position: center;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 4;
+  background-image: var(--url_bgImage1);
+  background-size: cover;
+  background-position: center;
+}
+.div3 {
+  grid-area: 2 / 1 / 4 / 2;
+  background-image: var(--url_bgImage2);
+  background-size: cover;
+  background-position: right;
+}
+.div4 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.title {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #f49f00;
+  text-align: center;
+  margin: 10px 0 10px;
+}
+.text {
+  font-size: 0.8em;
+  text-align: center;
+  margin: 10px 5px 10px;
+}
+.div5 {
+  grid-area: 2 / 3 / 3 / 4;
+  background-image: var(--url_bgImage4);
+  background-size: cover;
+  background-position: right;
+}
+.div6 {
+  grid-area: 3 / 2 / 4 / 4;
+  background-image: var(--url_bgImage5);
+  background-size: cover;
+  background-position: center;
+}
