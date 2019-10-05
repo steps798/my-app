@@ -1,0 +1,32 @@
+.button {
+  background: linear-gradient(to left, #0b486b, #f56217); /*sunset W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.6em;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0;
+}
+
+.footer img {
+  width: 25px;
+  height: 25px;
+  filter: invert(10%);
+  margin: 0 5px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+}
+
+

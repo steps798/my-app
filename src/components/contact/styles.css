@@ -1,0 +1,78 @@
+.button {
+  background: linear-gradient(to left, #0b486b, #f56217); /*sunset W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.logoAddress {
+  width: 100%;
+}
+
+#logo {
+  width: 3em;
+  display: block;
+  padding: 0;
+  margin: auto;
+}
+
+.center > p {
+  margin: auto;
+  text-align: center;
+  font-size: 0.8em;
+  color: #fba90f;
+}
+
+.left p {
+  display: block;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  margin: 12px 0;
+}
+
+.line {
+  background-color: #ffffff;
+  height: 0.5px;
+  margin: 12px 0;
+}
+
+.iconText {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconText p {
+  display: inline-block;
+  font-size: 0.7em;
+  margin: 0;
+  padding: 0;
+}
+
+.iconText img {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  display: inline-block;
+  filter: invert(20%);
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #logo {
+    width: 2em;
+  }
+  .iconText img {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    display: inline-block;
+  }
+}
+
+
