@@ -2,18 +2,36 @@ import React from 'react';
 
 import styles from './styles.css';
 
+const wa_link = 'https://wa.me/6281289741007?text=Halo%2C+Aristi+Buana+Tour%21+Saya+tertarik+dengan+penawaran+paket+tour+yang+tersedia.';
+
 function Service(){
   return (
-      <div className="parent">
-        <div className="div1"></div>
-        <div className="div2"></div>
-        <div className="div3"></div>
-        <div className="div4"></div>
-        <div className="div5">
-        <p className="title">Our Service</p>
+      <div className="container">
+        <div className="section-header">
+          <p className="title">Our Service</p>
           {/* <p className="text">Eu dolor incididunt commodo sunt. Culpa ex commodo adipisicing aliquip amet Lorem dolore do aliqua commodo velit amet. Nulla officia nisi laborum irure in aute sint incididunt deserunt eu exercitation.</p> */}
         </div>
-        <div className="div6"></div>
+        <div className="grid">
+          <div className="div1" style={{"--aspect-ratio": 1/1}}>
+            <div className="overlay">
+              <p className="header">Lorem Ipsum</p>
+              <p className="text">Ad et elit qui sint magna irure ex exercitation id irure occaecat.</p>
+            </div>
+          </div>
+          <div className="div2" style={{"--aspect-ratio": 1/1}}>
+            <div className="overlay">
+              <p className="header">Lorem Ipsum</p>
+              <p className="text">Ad et elit qui sint magna irure ex exercitation id irure occaecat.</p>
+            </div>
+          </div>
+          <div className="div3" style={{"--aspect-ratio": 1/1}}>
+            <div className="overlay">
+              <p className="header">Lorem Ipsum</p>
+              <p className="text">Ad et elit qui sint magna irure ex exercitation id irure occaecat.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     )
   }
