@@ -1,5 +1,74 @@
-.backgroundClip{
+.backgroundClip {
     clip-path: polygon(0 0, 100% 0, 57% 100%, 0% 100%);
     z-index: -100;
     background-color: #2364aa;
+}
+
+.whatsappNav {
+    --default-width: 60px;
+    width: var(--default-width);
+    height: var(--default-width);
+    background-color: #25D366;
+    border-radius: calc(var(--default-width) / 2); /* 50% from width and height, self-count to give circle-extending effect */
+    box-shadow: 0 6px 10px 0 #666;
+    transition: all 0.1s ease-in-out;
+    display: block;
+  
+    /* font-size: 1em; */
+    color: white;
+    text-align: right;
+    line-height: var(--default-width);
+  
+    z-index: 3;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+.whatsappNav span {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s linear 0.5s, opacity 0s linear;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    text-align: right;
+    margin-right: calc(var(--default-width)/2);
+    text-decoration: none;
+    color: var(--color-text-light);
+}
+
+.whatsappNav img {
+    max-height: 100%;
+}
+
+.whatsappNav:hover {
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-text-light);
+}
+
+.whatsappNav:hover span {
+    visibility: visible;
+    opacity: 1;
+    font-size: 1em;
+    transition: opacity 0.4s ease 0s, visibility 0s ease 0s;
+    /* display: inline; */
+    /* transition: all 0.2s ease-in-out; */
+}
+
+.whatsappNav:hover a {
+    text-decoration: none;
+    color: var(--color-text-light);
+}
+
+@media screen and (max-width: 768px) {
+    .whatsappNav:hover {
+        width: var(--default-width);
+        height: var(--default-width);
+    }
+    .whatsappNav:hover span {
+        display: none;
+    }
 }

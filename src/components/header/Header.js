@@ -5,7 +5,7 @@ import styles from './styles.css';
 
 function Header(){
   return (
-    <div class="headerContainer">
+    <div className="headerContainer">
       <img src={logo} id="mainLogo" alt="logo" />
 
       {/* <nav>
