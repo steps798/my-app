@@ -1,0 +1,35 @@
+.collapsible-container {
+  margin: 10px 0;
+}
+
+.collapsible {
+  background-color: var(--color-primary-light);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1em;
+
+}
+
+.collapsible:hover {
+  /* must be forced bcs inline style triggered by state */
+  background-color: var(--ripple-dark) !important; 
+  color: var(--color-text-secondary);
+}
+
+.content {
+  padding: 10px 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.expandArrow {
+  display: inline-block;
+  width: 12px;
+  transition: all 0.1s linear;
+}

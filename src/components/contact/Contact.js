@@ -13,7 +13,6 @@ function Contact(){
   return (
       <div className="logoAddress">
         <div className="center">
-          <img src={logo} alt="logo" id="logo"></img>
           <p>PT Aristi Buana Tour</p>
         </div>
         {/* <div className="line"></div> */}
