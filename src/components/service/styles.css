@@ -57,18 +57,11 @@
 .div3 {
   background: var(--url_bgImage2) center;
 }
-.title {
-  font-size: 1.8em;
-  font-weight: 700;
-  color: #f49f00;
-  padding: 0 0 0 10px;
-  margin: 0;
-}
-.header {
+.headerOverlay {
   font-size: 1em;
   margin: 15px 0 10px;
 }
-.text {
+.textOverlay {
   font-size: 0.8em;
   margin: 10px 5px 10px;
 }

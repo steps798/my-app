@@ -1,5 +1,5 @@
 import React from 'react';
-
+/* CardColumns for package page */
 import { CardDeck, Card } from 'react-bootstrap';
 import CollapsibleCard from '../collapsibleCard/CollapsibleCard';
 import bgImage1 from '../assets/grand israel.jpg';

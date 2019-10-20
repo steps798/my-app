@@ -1,33 +1,95 @@
-.App {
-  text-align: center;
+.header {
+  border: 0;
+  position: absolute; /* Sit on top of the page content */
+  /* display: none; */ /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.contactContainer {
+  background: linear-gradient(#ffffff, #8a8a8a, #6f6f6f, #4a4a4a); 
+  color: #b4b4b4;
+  padding: 70px 0 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.footer {
+  background-color: #4a4a4a; 
+  color: #b4b4b4;
+  padding-top: 20px;
+}
+
+
+.whatsappNav {
+  --default-width: 50px;
+  width: var(--default-width);
+  height: var(--default-width);
+  background-color: #25D366;
+  border-radius: calc(var(--default-width) / 2); /* 50% from width and height, self-count to give circle-extending effect */
+  box-shadow: 0 6px 10px 0 #666;
+  transition: all 0.1s ease-in-out;
+  display: block;
+
+  /* font-size: 1em; */
   color: white;
+  text-align: right;
+  line-height: var(--default-width);
+
+  z-index: 3;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.whatsappNav span {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s linear 0.5s, opacity 0s linear;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  text-align: right;
+  margin-right: calc(var(--default-width)/2);
+  text-decoration: none;
+  color: var(--color-text-light);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.whatsappNav img {
+  max-height: 100%;
+}
+
+.whatsappNav:hover {
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-text-light);
+}
+
+.whatsappNav:hover span {
+  visibility: visible;
+  opacity: 1;
+  font-size: 1em;
+  transition: opacity 0.4s ease 0s, visibility 0s ease 0s;
+  /* display: inline; */
+  /* transition: all 0.2s ease-in-out; */
+}
+
+.whatsappNav:hover a {
+  text-decoration: none;
+  color: var(--color-text-light);
+}
+
+@media screen and (max-width: 768px) {
+  .whatsappNav:hover {
+      width: var(--default-width);
+      height: var(--default-width);
   }
-  to {
-    transform: rotate(360deg);
+  .whatsappNav:hover span {
+      display: none;
   }
 }
+

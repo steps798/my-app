@@ -24,7 +24,7 @@ nav ul li a:hover {
 }
 
 .headerContainer {
-  padding-top: 10px;
+  padding-top: 1px;
   background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
 }
 

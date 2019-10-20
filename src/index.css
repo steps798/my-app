@@ -66,3 +66,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.title {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  padding: 0 0 10px;
+  margin: 0;
+  text-align: center;
+}

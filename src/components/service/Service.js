@@ -14,20 +14,20 @@ function Service(){
         <div className="grid">
           <div className="div1" style={{"--aspect-ratio": 1/1}}>
             <div className="overlay">
-              <p className="header">Lorem Ipsum</p>
-              <p className="text">Ad et elit qui sint magna irure ex exercitation id irure occaecat.</p>
+              <p className="headerOverlay">Lorem Ipsum</p>
+              <p className="textOverlay">Ad et elit qui sint magna irure ex exercitation id irure occaecat.</p>
             </div>
           </div>
           <div className="div2" style={{"--aspect-ratio": 1/1}}>
             <div className="overlay">
-              <p className="header">Lorem Ipsum</p>
-              <p className="text">Ad et elit qui sint magna irure ex exercitation id irure occaecat.</p>
+              <p className="headerOverlay">Lorem Ipsum</p>
+              <p className="textOverlay">Ad et elit qui sint magna irure ex exercitation id irure occaecat.</p>
             </div>
           </div>
           <div className="div3" style={{"--aspect-ratio": 1/1}}>
             <div className="overlay">
-              <p className="header">Lorem Ipsum</p>
-              <p className="text">Ad et elit qui sint magna irure ex exercitation id irure occaecat.</p>
+              <p className="headerOverlay">Lorem Ipsum</p>
+              <p className="textOverlay">Ad et elit qui sint magna irure ex exercitation id irure occaecat.</p>
             </div>
           </div>
         </div>
