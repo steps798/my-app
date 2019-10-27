@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import WhatsAppLogo from './components/assets/WhatsApp_Logo_2.png';
 import './App.css';
 import Page from './layout/Page';
@@ -11,7 +12,13 @@ function App() {
     <div className="App">
       {/* header, consider use sticky effect */}
       <div className="header"><Header/></div>
-      <Page />
+      <Router>
+        <div>
+          <Route exact path="/" component={Page} />
+          <Route path="/users" component={Page} />
+          {/* <Route path="/contact" component={Contact} /> */}
+        </div>
+      </Router>
       <div className="contactContainer"><Contact/></div>
       <a 
         className="whatsappNav"

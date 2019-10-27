@@ -1,4 +1,4 @@
-nav ul {
+/* nav ul {
   position: fixed;
   width: 60%;
   top: 0;
@@ -10,7 +10,7 @@ nav ul {
   padding-top: 3em;
 }
 
-nav li a {
+nav ul li a {
   color: #FFF;
   text-decoration: none;
   display: block;
@@ -21,16 +21,79 @@ nav li a {
 
 nav ul li a:hover {
   background-color: rgb(65, 73, 78);
-}
+} */
 
 .headerContainer {
-  padding-top: 1px;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  padding: 10px 10px 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+nav ul li a {
+  color: var(--color-text-light);
+  padding: 1em 2em;
+}
+
+nav ul li a:hover {
+  cursor: pointer;
 }
 
 #mainLogo {
   width: 7%;
-  display: block;
   padding: 0;
-  margin: 10px 20px 20px;
+}
+
+#ham {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px){
+
+  /* .show-desktop {
+    display: block;
+    margin: 0 auto 13% auto;
+  }
+
+  .hide-desktop {
+      display: none;
+  }
+
+  nav ul {
+    position: inherit;
+    width: auto;
+    background: none;
+    height: auto;
+    display: flex;
+    padding-top: 0;
+  }
+  
+  nav ul li {
+    float: left;
+  }
+
+  nav ul li a {
+    color: black;
+    background-color: inherit;
+    text-align: right;
+    padding: 1em 2em;
+  }
+
+  nav ul li a:hover {
+    background-color: inherit;
+  } */
+
 }
