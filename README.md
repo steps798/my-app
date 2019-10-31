@@ -1,2 +1,2 @@
 # my-app
-first front-end project from scratch :)
+first front-end project :)
