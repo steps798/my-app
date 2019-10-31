@@ -1,2 +1,2 @@
 # my-app
-first front-end project :)
+first front-end project for aristi buana tour :)
