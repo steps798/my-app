@@ -1,8 +1,9 @@
 import React from 'react';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import WhatsAppLogo from './components/assets/WhatsApp_Logo_2.png';
 import './App.css';
-import Page from './layout/Page';
+import HomePage from './layout/HomePage';
+import PackagePage from './layout/PackagePage';
 import Header from './components/header/Header';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
@@ -10,15 +11,16 @@ import Footer from './components/footer/Footer';
 function App() {
   return (
     <div className="App">
-      {/* header, consider use sticky effect */}
-      <div className="header"><Header/></div>
       <Router>
-        <div>
-          <Route exact path="/" component={Page} />
-          <Route path="/users" component={Page} />
-          {/* <Route path="/contact" component={Contact} /> */}
+        {/* header, consider use sticky effect */}
+        <div className="header">
+          <Header/>
         </div>
-      </Router>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/packages" component={PackagePage} />
+          {/* <Route path="/contact" component={Contact} /> */}
+        </Switch>
       <div className="contactContainer"><Contact/></div>
       <a 
         className="whatsappNav"
@@ -27,6 +29,7 @@ function App() {
         <span>chat on WhatsApp</span>
       </a>
       <div className="footer"><Footer/></div>
+      </Router>
     </div>
   );
 }

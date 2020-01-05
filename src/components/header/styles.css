@@ -25,7 +25,7 @@ nav ul li a:hover {
 
 .headerContainer {
   padding: 10px 10px 5px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--nav-drawer-background-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,27 +41,34 @@ nav ul {
 nav ul li {
   text-decoration: none;
   list-style: none;
+  padding-right: 2em;
 }
 
 nav ul li a {
   color: var(--color-text-light);
-  padding: 1em 2em;
 }
 
 nav ul li a:hover {
   cursor: pointer;
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+nav ul li a:active {
+  color: var(--color-secondary);
 }
 
 #mainLogo {
-  width: 7%;
+  width: 5%;
   padding: 0;
+  margin-left: 20px;
 }
 
 #ham {
   display: none;
 }
 
-@media only screen and (min-width: 1024px){
+@media screen and (max-width: 768px) {
 
   /* .show-desktop {
     display: block;

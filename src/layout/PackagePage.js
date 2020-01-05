@@ -33,42 +33,19 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function Page() {
+function PackagePage() {
   const classes = useStyles();
   return (
-    <div className="Page">
+    <div className="PackagePage">
       {/* <div className={styles.backgroundClip}>
       </div> */}
       <div className={classes.root}> 
         <Grid container style={{paddingLeft: 0, paddingRight: 0}}>
-          {/* main title */}
-          <Grid item xs={12} style={{margin: 0, padding: 0}}>
-            <div className={classes.imageSlider}><MainTitle/></div>
-          </Grid>
-          {/* introduction */}
-          <Grid item xs={12} 
-                style={{
-                  background: 'linear-gradient(#F6F6F6, #FFFFFF)',
-                  paddingTop: '70px'}}>
-            <div className={classes.component}><Introduction/></div>
-          </Grid>
-          {/* service */}
-          <Grid item xs={12}>
-            <div className={classes.component}><Service/></div>
-          </Grid>
-          {/* package */}
           <Grid item xs={12} 
                 style={{
                   background: 'linear-gradient(#ffffff, #F6F6F6)',
                   paddingTop: '70px'}}>
             <div className={classes.component} style={{margin: '20px 0', padding: 0}}><Package/></div>
-          </Grid>
-          <Grid item xs={12} 
-                style={{}}>
-            <div className={classes.component} style={{margin: '50px 20px', padding: '10px 0', fontSize:  '1.5em', textAlign: 'center'}}>
-              <p>Aliquip magna duis id deserunt dolore voluptate incididunt.</p>
-              <small>Anim est fugiat irure qui velit.</small>
-            </div>
           </Grid>
         </Grid>
       </div>
@@ -77,4 +54,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default PackagePage;
