@@ -29,6 +29,10 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
 }
 
 nav ul {
@@ -120,7 +124,7 @@ nav ul li a:active {
 
   nav input:checked ~ ul {
     background-color: var(--nav-drawer-background-color);
-    position: absolute;
+    position: fixed;
     right: 0;
     width: 35%;
     height: 100%;

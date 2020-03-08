@@ -21,7 +21,7 @@ function Header(){
         />
         <img src={hamimg} class="ham"/>
         <img src={hamtoggleimg} class="hamtoggle"/>
-        {/* TODO min width for mobile */}
+        {/* TODO fix mainTitle position/z-index */}
         <ul class="show-desktop" >
           <li onClick={() => setHam(false)}><Link to={routes.home.uri}>home</Link></li>
           <li onClick={() => setHam(false)}><Link to={routes.packages.uri}>packages</Link></li>
