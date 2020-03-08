@@ -19,6 +19,7 @@ function MainTitle(){
       <Carousel 
         style={{maxWidth: '100%'}} 
         controls={false}
+        indicators={false}
         fade={true}
         interval={'3000'}
         >

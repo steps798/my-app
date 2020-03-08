@@ -46,6 +46,7 @@ nav ul li {
 
 nav ul li a {
   color: var(--color-text-light);
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -58,28 +59,81 @@ nav ul li a:active {
   color: var(--color-secondary);
 }
 
+.hide-desktop {
+  display: none;
+}
+
+.ham, .hamtoggle {
+  display: none;
+}
+
 #mainLogo {
   width: 5%;
   padding: 0;
   margin-left: 20px;
 }
 
-#ham {
-  display: none;
-}
-
 @media screen and (max-width: 768px) {
 
-  /* .show-desktop {
+  .show-desktop {
     display: block;
     margin: 0 auto 13% auto;
   }
 
   .hide-desktop {
-      display: none;
+    display: block;
+  }
+
+  nav input {
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
   }
 
   nav ul {
+    transition: width 2s ease;
+  }
+
+  nav input:not(:checked) ~ .ham {
+    display: block;
+    color: #ffffff;
+    position: relative;
+  }
+
+  nav input:not(:checked) ~ .hamtoggle {
+    display: none;
+  }
+
+  nav input:not(:checked) ~ ul {
+    display: none;
+  }
+
+  nav input:checked ~ .ham {
+    display: none;
+  }
+
+  nav input:checked ~ .hamtoggle {
+    display: block;
+    color: #ffffff;
+    position: relative;
+  }
+
+  nav input:checked ~ ul {
+    background-color: var(--nav-drawer-background-color);
+    position: absolute;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    text-align: right;
+    padding: 10px;
+  }
+
+  nav input:checked ~ ul li {
+    padding: 10px;
+  }
+
+
+  /* nav ul {
     position: inherit;
     width: auto;
     background: none;
