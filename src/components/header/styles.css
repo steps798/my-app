@@ -23,6 +23,18 @@ nav ul li a:hover {
   background-color: rgb(65, 73, 78);
 } */
 
+.header {
+  border: 0;
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
 .headerContainer {
   padding: 10px 10px 5px;
   background-color: var(--nav-drawer-background-color);
@@ -31,8 +43,7 @@ nav ul li a:hover {
   align-items: center;
   width: 100%;
   position: fixed;
-  top: 0;
-  z-index: 99;
+  top: 0; 
 }
 
 nav ul {

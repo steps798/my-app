@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom'
 
 import { Carousel } from 'react-bootstrap';
 import bgImage1 from '../assets/grand israel.jpg';
@@ -8,21 +9,41 @@ import bgImage4 from '../assets/dead-sea-tiberias-sea-of-galilee.jpg';
 import bgImage5 from '../assets/Church_of_the_Holy_Sepulchre.jpg';
 import styles from './styles.css';
 
-function MainTitle(){
+const blabla = <div className="mainTitle"/>
+
+class MainTitle extends React.Component {
+  constructor(props) {
+    super (props);
+  }
+
+  renderTitle() {
+    return (
+      <div className="mainTitle">
+          <p>Feel His Enormous Love through Trip to Holy Land</p>
+          <span>only with Aristi Buana Tour</span>
+        </div>
+    )
+  }
+
+  render() {
   return (
     <div style={{display: 'flex', alignItems: 'center'}}>
       {/* <img src={bgImage} id="bgImage" alt="bgImage" /> */}
-      <div className="mainTitle">
-        <p>Feel His Enormous Love through Trip to Holy Land</p>
-        <span>only with Aristi Buana Tour</span>
-      </div>
+        <div className="mainTitle">
+          <p>Feel His Enormous Love through Trip to Holy Land</p>
+          <span>only with Aristi Buana Tour</span>
+        </div>
       <Carousel 
         style={{maxWidth: '100%'}} 
         controls={false}
         indicators={false}
         fade={true}
         interval={'3000'}
-        >
+      >
+        {/* <div className="mainTitle">
+          <p>Feel His Enormous Love through Trip to Holy Land</p>
+          <span>only with Aristi Buana Tour</span>
+        </div> */}
         <Carousel.Item>
           <img
             className="d-block w-100"
@@ -67,5 +88,6 @@ function MainTitle(){
     </div>
     )
   }
+}
   
   export default MainTitle;
