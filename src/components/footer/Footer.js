@@ -6,6 +6,7 @@ import phone from '../assets/phone-solid.svg';
 import mail from '../assets/envelope-open-regular.svg';
 import insta from '../assets/instagram-brands.svg';
 import youtube from '../assets/youtube-brands.svg';
+import { IG_LINK } from '../../string.js';
 
 import styles from './styles.css';
 
@@ -14,13 +15,13 @@ function Footer(){
     <div className="container">
       <div className="footer">
         <p>
-        ©2019 All rights reserved
+        ©{new Date().getFullYear()} All rights reserved
         </p>
         <div className="socmed">
-          <a href="#">
+          <a href={IG_LINK} target="_blank">
             <img src={insta} alt="instagram"></img>
           </a>
-          <a href="#">
+          <a href="#" target="_blank">
             <img src={youtube} alt="youtube"></img>
           </a>
         </div>

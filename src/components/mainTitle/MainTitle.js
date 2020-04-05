@@ -2,14 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom'
 
 import { Carousel } from 'react-bootstrap';
-import bgImage1 from '../assets/grand israel.jpg';
-import bgImage2 from '../assets/old-city-jerusalem.jpg';
-import bgImage3 from '../assets/jerusalem-old-city.jpg';
-import bgImage4 from '../assets/dead-sea-tiberias-sea-of-galilee.jpg';
-import bgImage5 from '../assets/Church_of_the_Holy_Sepulchre.jpg';
+import bgImage1 from '../assets/golden_city-jerusalem.edit.jpg';
+import bgImage2 from '../assets/custody__of_the_hoy_land-israel.edit.jpg';
+import bgImage3 from '../assets/IMG_3731.edit.jpg';
+import bgImage4 from '../assets/IMG_3649.edit.jpg';
+import bgImage5 from '../assets/dolorosa.edit.jpg';
 import styles from './styles.css';
-
-const blabla = <div className="mainTitle"/>
+import { ARISTI_TOUR } from '../../string.js';
 
 class MainTitle extends React.Component {
   constructor(props) {
@@ -19,9 +18,9 @@ class MainTitle extends React.Component {
   renderTitle() {
     return (
       <div className="mainTitle">
-          <p>Feel His Enormous Love through Trip to Holy Land</p>
-          <span>only with Aristi Buana Tour</span>
-        </div>
+        <p>Make It Meaningful And Memorable in Your Travel   </p>
+        <span>only with {ARISTI_TOUR}  </span>
+      </div>
     )
   }
 
@@ -29,10 +28,7 @@ class MainTitle extends React.Component {
   return (
     <div style={{display: 'flex', alignItems: 'center'}}>
       {/* <img src={bgImage} id="bgImage" alt="bgImage" /> */}
-        <div className="mainTitle">
-          <p>Feel His Enormous Love through Trip to Holy Land</p>
-          <span>only with Aristi Buana Tour</span>
-        </div>
+        { this.renderTitle() }
       <Carousel 
         style={{maxWidth: '100%'}} 
         controls={false}
@@ -40,10 +36,6 @@ class MainTitle extends React.Component {
         fade={true}
         interval={'3000'}
       >
-        {/* <div className="mainTitle">
-          <p>Feel His Enormous Love through Trip to Holy Land</p>
-          <span>only with Aristi Buana Tour</span>
-        </div> */}
         <Carousel.Item>
           <img
             className="d-block w-100"

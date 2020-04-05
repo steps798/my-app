@@ -2,8 +2,6 @@ import React from 'react';
 
 import styles from './styles.css';
 
-const wa_link = 'https://wa.me/6281289741007?text=Halo%2C+Aristi+Buana+Tour%21+Saya+tertarik+dengan+penawaran+paket+tour+yang+tersedia.';
-
 function Service(){
   return (
       <div className="container">

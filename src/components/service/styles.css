@@ -8,11 +8,9 @@
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   margin: 0 2em;
-  --url_bgImage1: url("../assets/Dome-of-Church-of-the-Holy-Sepulchre.jpg");
-  --url_bgImage2: url('../assets/old-city-jerusalem.jpg');
-  --url_bgImage3: url('../assets/jerusalem-old-city.jpg');
-  --url_bgImage4: url('../assets/dead-sea-tiberias-sea-of-galilee.jpg');
-  --url_bgImage5: url('../assets/Church_of_the_Holy_Sepulchre.jpg');
+  --url_bgImage1: url('../assets/IMG_3516.edit.1.jpg');
+  --url_bgImage2: url('../assets/jordan_river.edit.1.jpg');
+  --url_bgImage3: url('../assets/salah_el_din_castle-cairo_egypt.edit.1.jpg');
 }
 
 .grid > [style^='--aspect-ratio']::before {
@@ -30,10 +28,6 @@
   text-align: center;
   border-radius: 7px;
   box-shadow: 3px 3px 9px 1px rgba(171,171,171,1);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 @media screen and (min-width: 400px) and (max-width: 800px) {
@@ -49,13 +43,25 @@
 } */
 
 .div1 {
-  background: var(--url_bgImage3) center;
+  background: var(--url_bgImage1) center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .div2 {
-  background: var(--url_bgImage1) center;
+  background: var(--url_bgImage2) center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .div3 {
-  background: var(--url_bgImage2) center;
+  background: var(--url_bgImage3) center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .headerOverlay {
   font-size: 1em;

@@ -8,6 +8,8 @@ import Header from './components/header/Header';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 
+import { WA_LINK } from './string.js';
+
 function App() {
   return (
     <div className="App">
@@ -24,7 +26,7 @@ function App() {
       <div className="contactContainer"><Contact/></div>
       <a 
         className="whatsappNav"
-        href="https://wa.me/6281289741007?text=Saya+tertarik+dengan+Aristi+Buana+Tour%21">
+        href={WA_LINK}>
         <img src={WhatsAppLogo}/>
         <span>chat on WhatsApp</span>
       </a>
